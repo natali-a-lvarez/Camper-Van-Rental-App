@@ -1,3 +1,9 @@
+import Navigation from "../components/Navigation";
+
 export default function AddVan() {
-  return <p>I am adding a van</p>;
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 }

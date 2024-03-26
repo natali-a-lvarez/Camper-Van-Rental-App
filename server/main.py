@@ -15,6 +15,10 @@ def get_vans():
 @app.route('/vans/<int:id>', methods={'GET'})
 def get_van(id):
     van = Van.query.get(id)
+
+    if not van:
+        return jsonify({"message": "Van not found!"}), 404
+
     return jsonify(van.to_json())
 
 # POST a book
@@ -40,6 +44,18 @@ def create_van():
         return jsonify({"message": str(e)}), 400
     
     return jsonify({"message": "Van created!"}), 201
+
+# DELETE book
+@app.route('/vans/<int:id>', methods={"DELETE"})
+def delete_van(id):
+    van = Van.query.get(id)
+
+    if not van:
+        return jsonify({"message": "Van not found!"}), 404
+    
+    db.session.delete(van)
+    db.session.commit()
+    return jsonify({"message": "Van Deleted!"}), 200
 
 
 if __name__ == "__main__":
