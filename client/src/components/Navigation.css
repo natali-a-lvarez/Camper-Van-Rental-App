@@ -1,21 +1,24 @@
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
   align-items: center;
-  gap: 15px;
+  box-shadow: 0 4px 20px -2px rgba(128, 128, 128, 0.19);
+
+  padding: 8px 2.5rem;
   margin-bottom: 30px;
 }
 
 .logo {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
 }
 
 .nav-links {
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
   list-style: none;
   padding: 0;
 }
@@ -27,5 +30,4 @@ header {
 
 .active {
   border-bottom: 1px solid black;
-  font-weight: 500;
 }

@@ -1,15 +1,12 @@
 import "./Van.css";
 import { render } from "react-dom";
 import { Speedometer, Location } from "react-ionicons";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Van({ van }) {
   return (
     <div className="van-card">
-      <img
-        className="card-img"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIpwxyEV6eLbiQinBe1s0zQ55YAoJ7P0hlWE5_wpChbA&s"
-        alt={van.name}
-      />
+      <img className="card-img" src={van.imgUrl} alt={van.name} />
       <div className="card-body">
         <div className="card-titles">
           <h3 className="card-title">{van.name}</h3>
@@ -34,7 +31,9 @@ export default function Van({ van }) {
           <Location color="#3e3e3e" />
           <p className="card-icon_text"> {van.location}</p>
         </div>
-        <button className="card-btn">Book now!</button>
+        <NavLink to={`/van/${van.id}`} className="card-btn">
+          Book now!
+        </NavLink>
       </div>
     </div>
   );
