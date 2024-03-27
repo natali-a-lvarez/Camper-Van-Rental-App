@@ -45,15 +45,7 @@ export default function VanDetail() {
             </ul>
 
             <h3>Vehicle Description</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Blanditiis consectetur minus voluptate odit veritatis esse, veniam
-              odio adipisci voluptatibus? Et aliquid debitis, voluptatum eius
-              saepe ducimus sed magnam in explicabo. Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. A nostrum ad autem? Necessitatibus
-              nulla, voluptatem, pariatur et aliquid laudantium eveniet natus
-              minima quis iure odit, commodi incidunt cum doloremque facilis.
-            </p>
+            <p>{van.description}</p>
           </div>
           <div className="van-pricing-container">
             <ul>
