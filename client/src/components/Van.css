@@ -67,14 +67,3 @@
   color: #3e3e3e;
   margin: 0;
 }
-
-.card-btn {
-  align-self: end;
-  background-color: var(--accent-color);
-  border: none;
-  padding: 0.5rem 2rem;
-  border-radius: 5px;
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
-}

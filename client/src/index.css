@@ -14,3 +14,14 @@
 body {
   margin: 0;
 }
+
+.btn {
+  align-self: end;
+  background-color: var(--accent-color);
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}

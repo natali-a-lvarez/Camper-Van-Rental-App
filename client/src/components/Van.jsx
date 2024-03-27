@@ -31,7 +31,7 @@ export default function Van({ van }) {
           <Location color="#3e3e3e" />
           <p className="card-icon_text"> {van.location}</p>
         </div>
-        <NavLink to={`/van/${van.id}`} className="card-btn">
+        <NavLink to={`/van/${van.id}`} className="btn">
           Book now!
         </NavLink>
       </div>
